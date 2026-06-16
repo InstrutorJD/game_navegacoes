@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Era das Grandes Navegações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-wrapper">
+      <!-- GAME CANVAS -->
+      <canvas id="game-canvas"></canvas>
+
+      <!-- HUD (overlay no jogo) -->
+      <div id="hud">
+        <div id="region-label"></div>
+        <div id="location-prompt"></div>
+        <div class="hud-controls">WASD — Mover &nbsp;·&nbsp; SHIFT — Correr &nbsp;·&nbsp; E — Interagir &nbsp;·&nbsp; M — Música</div>
+        <button id="music-btn" onclick="MUSIC.toggle(); updateMusicBtn();">🎵</button>
+
+        <!-- Barra de missão -->
+        <div id="quest-hud">
+          <div class="quest-title">MISSÃO — Prepare a Expedição</div>
+          <div class="quest-items">
+            <div class="q-item" data-id="infante">
+              <span class="q-icon">♔</span>
+              <span class="q-label">Infante D. Henrique</span>
+              <span class="q-check">✓</span>
+            </div>
+            <div class="q-item" data-id="rei">
+              <span class="q-icon">♜</span>
+              <span class="q-label">Rei Dom Manuel I</span>
+              <span class="q-check">✓</span>
+            </div>
+            <div class="q-item" data-id="padre">
+              <span class="q-icon">✝</span>
+              <span class="q-label">Frei Henrique</span>
+              <span class="q-check">✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tela de conclusão -->
+      <div id="completion-screen">
+        <div id="completion-content">
+          <div class="completion-sup">Lisboa, 9 de Março de 1500</div>
+          <div class="completion-ship">⛵</div>
+          <h2 class="completion-title">A Frota Zarpa!</h2>
+          <p class="completion-text">
+            Pedro Álvares Cabral parte com <strong>13 navios e 1.200 homens</strong>
+            rumo às Índias. Ao desviar-se para o Ocidente para evitar calmarias,
+            avista terras desconhecidas em <strong>22 de abril de 1500</strong>.
+          </p>
+          <div class="completion-divider">⚜ &nbsp; ⚜ &nbsp; ⚜</div>
+          <p class="completion-fact">
+            O <strong>Brasil</strong> havia sido descoberto — a maior consequência não planeada
+            das Grandes Navegações Portuguesas.
+          </p>
+          <button class="completion-btn" onclick="restartGame()">↩ &nbsp; Jogar Novamente</button>
+        </div>
+      </div>
+
+      <!-- CAIXA DE DIÁLOGO -->
+      <div id="dialogue-box">
+        <span id="dialogue-npc-name"></span>
+        <div id="dialogue-text"></div>
+        <div id="dialogue-choices"></div>
+        <div id="dialogue-advance">▶&nbsp; E — Continuar</div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

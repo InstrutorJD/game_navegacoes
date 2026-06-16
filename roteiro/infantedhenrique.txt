@@ -1,0 +1,22 @@
+Quando o jogador começa a jornada
+
+"Portugal é pequeno, mas o mar não tem fronteiras. Vai, e traz-me o que os mapas ainda não mostram."
+"Não temas o horizonte. O que os homens chamam de fim do mundo, eu chamo de começo."
+
+Dando uma missão
+
+"Os mouros bloqueiam as rotas de terra. Encontra um caminho pelo mar — e a glória será tua e de Portugal."
+"Há um cabo ao sul que nenhum cristão dobrou. Chama-se Bojador. Vai lá chegar."
+
+Quando o jogador falha ou volta sem completar
+
+"Não voltaste derrotado. Voltaste mais sábio. Isso também serve a Portugal."
+"Catorze vezes tentaram dobrar o Bojador antes de Gil Eanes. Na décima quinta, conseguiu."
+
+Reflexivo / filosófico
+
+"Dizem que sou o Navegador. Ironia — nunca embarquei. Mas cada nau que parte leva um pedaço da minha alma."
+"Deus deu-nos olhos para ver além do horizonte. O medo é o único mapa falso."
+
+Encerrando uma conversa
+"Vai com Deus e com a Ordem de Cristo. O vento te seja favorável."
